@@ -18,12 +18,13 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor : "lightblue",
         borderColor: "white",
-        padding: '10px',
+        padding: 10,
+        marginTop: 50,
+        marginBottom: 30,
     },
     titleText:{
         color: 'white',
         fontSize: 36,
-        fontFamily: "comic-sans"
     },
 })
 

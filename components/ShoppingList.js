@@ -5,7 +5,7 @@ const ShoppingList = (props) => {
   return (
     <TouchableOpacity onPress={props.onDelete.bind(this, props.id)}>
       <View key={props.id} style={styles.shoppingListItem}>
-        <Text>{props.text}</Text>
+        <Text className={styles.shoppingItemText} style={styles.shoppingItemText}>{props.text}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -15,11 +15,13 @@ const styles = StyleSheet.create({
   shoppingListItem: {
     borderWidth: 1,
     backgroundColor: "#ccc",
-    textAlign: "center",
-    marginVertical: 10,
+    marginVertical: 20,
     padding: 10,
     width: "100%",
   },
+  shoppingItemText:{
+    textAlign: "center",
+  }
 });
 
 export default ShoppingList;
